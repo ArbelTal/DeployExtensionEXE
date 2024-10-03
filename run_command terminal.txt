@@ -1,0 +1,11 @@
+DeployExtensionGitHub.py and run_command.py needs to be in the same folder.
+
+run command in terminal:
+-----------------------
+pyinstaller --onefile --add-data "DeployExtensionGitHub.py;." --name installer_maker run_command.py
+
+info:
+-----
+run_command.py will create installer_maker.exe 
+this installer will download the latest pyTal Version from GitHub 
+in name format "pyTal-YYYYMMDD.exe"
